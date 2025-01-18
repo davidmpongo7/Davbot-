@@ -1,33 +1,30 @@
 const axios = require('axios');
+
 module.exports.config = {
-  name: 'ai',
-  version: '1.0.0',
-  role: 0,
-  hasPrefix: false,
-  aliases: ['gpt', 'openai'],
-  description: "An AI command powered by GPT-4",
-  usage: "Ai [promot]",
-  credits: 'Men',
-  cooldown: 3,
+		name: 'ai',
+		version: '1.0.0',
+		role: 0,
+		hasPrefix: false,
+		description: "An AI command powered by OpenAI",
+		usages: "",
+		credits: 'Developer',
+		cooldown: 5,
 };
-module.exports.run = async function({
-  api,
-  event,
-  args
-}) {
-  const input = args.join(' ');
-  if (!input) {
-    api.sendMessage(`℘༒𝗔𝗫𝗘𝗟-𝗖𝗢𝗣𝗜𝗟𝗢𝗧༒℘:\n━━━━━━━━━━━\n\n 𝖯𝗈𝗌𝖾𝗋 𝗆𝗈𝗂 𝗏𝗈𝗍𝗋𝖾 𝗊𝗎𝖾𝗌𝗍𝗂𝗈𝗇.💭`, event.threadID, event.messageID);
-    return;
-  }
-  api.sendMessage(``, event.threadID, event.messageID);
-  try {
-    const {
-      data
-    } = await axios.get(`https://metoushela-rest-api-tp5g.onrender.com/api/gpt4o?query=${encodeURIComponent(input)}`);
-    const response = data.response;
-    api.sendMessage('℘༒𝗔𝗫𝗘𝗟-𝗖𝗢𝗣𝗜𝗟𝗢𝗧༒℘:\n━━━━━━━━━━━\n\n' + response + '\n━━━━━━━━━━━\n 🎤𝗟𝗜𝗡𝗞 𝗔𝗫𝗘𝗟-𝗖𝗢𝗣𝗜𝗟𝗢𝗧: axel-copilot-44xi.onrender.com', event.threadID, event.messageID);
-  } catch (error) {
-    api.sendMessage('An error occurred while processing your request.', event.threadID, event.messageID);
-  }
+
+module.exports.run = async function({ api, event, args }) {
+		if (!args[0]) {
+				api.sendMessage("vas y🤒 entrer a ta question 🤓", event.threadID);
+				return;
+		}
+
+		const question = args.join(" ");
+		const apiUrl = `https://openai-rest-api.vercel.app/hercai?ask=${encodeURIComponent(question)}&model=v3`;
+
+		try {
+				const response = await axios.get(apiUrl);
+				api.sendMessage(response.data.reply, event.threadID);
+		} catch (error) {
+				console.error("Error fetching response from OpenAI API:", error);
+				api.sendMessage("An error occurred while processing your request. Please try again later.", event.threadID);
+		}
 };
