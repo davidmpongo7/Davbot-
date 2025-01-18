@@ -25,30 +25,34 @@ module.exports.run = async function({
       let page = 1;
       let start = (page - 1) * pages;
       let end = start + pages;
-      let helpMessage = `  🎐🔖𝗔𝗫𝗘𝗟 𝗖𝗢𝗣𝗜𝗟𝗢𝗧🎐🔖\n  𝚌𝚖ｄ:\n━━━━━━━━━━━━━━━\n\n`;
+      let helpMessage = `  ✰🌿𝗗𝗔𝗩𝗕𝗢𝗧🌿✰\n  𝚌𝚖ｄ:\nAndroid Download 👉: 
+
+iOS Download 👉: http://www.appsgeyser.com/18522058?🌿━━━━━━━━━━━━━━🌿\n\n`;
       for (let i = start; i < Math.min(end, commands.length); i++) {
-        helpMessage += `🎐🔖\t${i + 1}. ➳ ${prefix}${commands[i]} \n`;
+        helpMessage += `🌿\t${i + 1}. ➳ ${prefix}${commands[i]} \n`;
       }
       helpMessage += '\n';
       eventCommands.forEach((eventCommand, index) => {
-        helpMessage += `\t${index + 1}. 🎐🔖➳${prefix}${eventCommand} \n`;
+        helpMessage += `\t${index + 1}. 🦅🌿➳${prefix}${eventCommand} \n`;
       });
-      helpMessage += `\n𝐏𝐀𝐆𝐄 ${page}/${Math.ceil(commands.length / pages)}. 𝗧𝗼 𝘃𝗶𝗲𝘄 𝘁𝗵𝗲 𝗡𝗲𝘅𝘁 𝗣𝗮𝗴𝗲, 𝗧𝘆𝗽𝗲 '${prefix}𝗵𝗲𝗹𝗽 𝗽𝗮𝗴𝗲🎮 𝗡𝘂𝗺𝗯𝗲𝗿'. 𝗧𝗼 𝗩𝗶𝗲𝘄 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻🥉 𝗔𝗯𝗼𝘂𝘁 𝗮 𝗦𝗽𝗲𝗰𝗶𝗳𝗶𝗰 𝗖𝗼𝗺𝗺𝗮𝗻𝗱, 𝗧𝘆𝗽𝗲. '${prefix}𝗛𝗲𝗹𝗽 𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗡𝗮𝗺𝗲🎖`;
+      helpMessage += `\n𝐏𝐀𝐆𝐄 ${page}/${Math.ceil(commands.length / pages)}. 𝗧𝗼 𝘃𝗶𝗲𝘄 𝘁𝗵𝗲 𝗡𝗲𝘅𝘁 𝗣𝗮𝗴𝗲, 𝗧𝘆𝗽𝗲🌿 '${prefix}𝗵𝗲𝗹𝗽 𝗽𝗮𝗴𝗲🎮 𝗡𝘂𝗺𝗯𝗲𝗿'. 𝗧𝗼 𝗩𝗶𝗲𝘄 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻🌿 𝗔𝗯𝗼𝘂𝘁 𝗮 𝗦𝗽𝗲𝗰𝗶𝗳𝗶𝗰 𝗖𝗼𝗺𝗺𝗮𝗻𝗱, 𝗧𝘆𝗽𝗲. '${prefix}𝗛𝗲𝗹𝗽 𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗡𝗮𝗺𝗲🌿`;
       api.sendMessage(helpMessage, event.threadID, event.messageID);
     } else if (!isNaN(input)) {
       const page = parseInt(input);
       const pages = 20;
       let start = (page - 1) * pages;
       let end = start + pages;
-      let helpMessage = `🎐🔖𝗔𝗫𝗘𝗟 𝗖𝗢𝗣𝗜𝗟𝗢𝗧🎐🔖\n 𝚌𝚖ｄ🥢\n━━━━━━━━━━━━━━━\n\n`;
+      let helpMessage = ` 🌿Android Download : 👉 http://www.appsgeyser.com/18522058?
+
+iOS Download 👉: http://www.appsgeyser.com/18522058?✰𝗗𝗔𝗩𝗕𝗢𝗧✰🌿\n 𝚌𝚖ｄ🌿\n━━━━━━━━━━━━━━━\n\n`;
       for (let i = start; i < Math.min(end, commands.length); i++) {
-        helpMessage += `\t${i + 1}. 🎐🔖➳ ${prefix}${commands[i]} \n`;
+        helpMessage += `\t${i + 1}. 🌿➳ ${prefix}${commands[i]} \n`;
       }
       helpMessage += '\n';
       eventCommands.forEach((eventCommand, index) => {
-        helpMessage += `\t${index + 1}🎐🔖➳${prefix}${eventCommand} \n`;
+        helpMessage += `\t${index + 1}🌿➳${prefix}${eventCommand} \n`;
       });
-      helpMessage += `\n𝗣𝗮𝗴𝗲 ${page} 𝗢𝗳 ${Math.ceil(commands.length / pages)}\n𝗕𝘁𝘄 𝗖𝗿𝗲𝗮𝘁𝗼𝗿 𝘆𝗼𝘂𝗿 𝗼𝘄𝗻 𝗯𝗼𝘁➪➪ ♧ \n➪ https://axel-copilot-44xi.onrender.com`;
+      helpMessage += `\n𝗣𝗮𝗴𝗲 ${page} 𝗢𝗳 ${Math.ceil(commands.length / pages)}\n𝗕𝘁𝘄 𝗖𝗿𝗲𝗮𝘁𝗼𝗿 𝘆𝗼𝘂𝗿 𝗼𝘄𝗻 𝗯𝗼𝘁➪➪ ♧ \n`;
       api.sendMessage(helpMessage, event.threadID, event.messageID);
     } else {
       const command = [...Utils.handleEvent, ...Utils.commands].find(([key]) => key.includes(input?.toLowerCase()))?.[1];
@@ -91,7 +95,7 @@ module.exports.handleEvent = async function({
     messageID,
     body
   } = event;
-  const message = prefix ? '🎐➳𝖲𝗒𝗌𝗍𝖾𝗆 𝗉𝗋𝖾𝖿𝗂𝗑 𝗂𝗌:🎲\n🔖➳y𝗈𝗎𝗋 𝖼𝗁𝖺𝗍𝖻𝗈𝗍 𝗉𝗋𝖾𝖿𝗂𝗑 𝗂𝗌: ' + prefix : "🎐🔖𝗔𝗫𝗘𝗟 𝗖𝗢𝗣𝗜𝗟𝗢𝗧🎐🔖.\n━━━━━━━━━━━━━━━\nSorry i don't have prefix";
+  const message = prefix ? '🌿➳𝖲𝗒𝗌𝗍𝖾𝗆 𝗉𝗋𝖾𝖿𝗂𝗑 𝗂𝗌:🎲\n🌿➳y𝗈𝗎𝗋 𝖼𝗁𝖺𝗍𝖻𝗈𝗍 𝗉𝗋𝖾𝖿𝗂𝗑 𝗂𝗌: ' + prefix : "🌿 𝗗𝗔𝗩𝗕𝗢𝗧 🌿\n━━━━━━━━━━━━━━━\nSorry i don't have prefix";
   if (body?.toLowerCase().startsWith('prefix')) {
     api.sendMessage(message, threadID, messageID);
   }
