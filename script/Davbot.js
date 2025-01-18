@@ -10,7 +10,7 @@ module.exports = {
 
         if (!input) {
             api.sendMessage(
-                `🧸🜋𝗔𝗫𝗘𝗟 𝗖𝗢𝗣𝗜𝗟𝗢𝗧🜋🧸\n●═════❍═════●\n\nI am an AI developed by 🜋𝐎𝐋𝐈𝐕𝐄𝐑 𝐆𝐀𝐁𝐑𝐈𝐄𝐋🜋. I am here to assist you with any questions or tasks you may have.\n\nUsage: ai [your question]`,
+                `✰𝐃𝐀𝐕𝐁𝐎𝐓✰\n●═════❍═════●\n\nI am an AI developed by  𝐃𝐀𝐕𝐈𝐃 𝐌𝐏 i am here to assist you with any questions or tasks you may have.\n\nUsage: ai [your question]`,
                 event.threadID,
                 event.messageID
             );
@@ -31,7 +31,7 @@ module.exports = {
             const options = { timeZone: 'Asia/Manila', hour12: true };
             const timeString = new Date().toLocaleString('en-US', options);
 
-            const finalResponse = ` ➪ 𝐑𝐄𝐏𝐎𝐍𝐒𝐄 \n━━━━━━━━━━━━━━━━━━━\n𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ${input}\n━━━━━━━━━━━━━━━━━━━\n𝗔𝗻𝘀𝘄𝗲𝗿: ${response}\n\n𝐆𝐀𝐁: ${timeString}\n\n𝐅𝐎𝐋𝐋𝐎𝐖 𝐓𝐇𝐄 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑: https://www.facebook.com/profile.php?id=61555963733226\nhttps://www.facebook.com/profile.php?id=100095725560244\n\n𝐀𝐔𝐓𝐎𝐁𝐎𝐓 𝐋𝐈𝐍𝐊: https://autobot-gabriel.onrender.com`;
+            const finalResponse = ` ➪ 𝐑𝐄𝐏𝐎𝐍𝐒𝐄 \n━━━━━━━━━━━━━━━━━━━\n𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ${input}\n━━━━━━━━━━━━━━━━━━━\n𝗔𝗻𝘀𝘄𝗲𝗿: ${response}\n\n𝐆𝐀𝐁: ${timeString}\n\n𝐅𝐎𝐋𝐋𝐎𝐖 𝐓𝐇𝐄 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑: https://www.facebook.com/profile.php?id=100092277325670\n https://www.facebook.com/profile.php?id=61550884726891\n\n𝐀𝐔𝐓𝐎𝐁𝐎𝐓 𝐋𝐈𝐍𝐊: contact admin`;
             api.sendMessage(finalResponse, event.threadID, event.messageID);
         } catch (error) {
             let errorMessage = 'An error occurred while processing your request, please try sending your question again.';
