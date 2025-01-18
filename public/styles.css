@@ -1,181 +1,266 @@
 body {
-		 padding: 20px;
-		 background-image: url("https://i.ibb.co/R27xWLf/image.jpg");
-		 background-size: cover;
-		 font-family: 'Poppins', sans-serif;
-	   border-radius: 10px;
-}
- .container {
-	   color: #FFFF;
-	   background: transparent;
-	   backdrop-filter: blur(10px);
-		 border-radius: 20px;
-		 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-		 padding: 20px;
-		 margin-top: 20px;
-		 margin-bottom: 20px;
-	  outline: 2px solid #FFFFFF;
-}
- h1 {
-		 color: #FFFFFF;
-		 font-size: 24px;
-		 margin-bottom: 15px;
-}
- label {
-		 background-color: #FFFFFF;
-	   color: #343434;
-		 border-radius: 10px;
-		 font-weight: bold;
-		 margin-bottom: 5px;
-	   background-image: #FFFFFF;
-}
- .centered-textarea {
-		 color: #FFFFFF;
-		 display: flex;
-		 margin: 0 auto;
-		 width: 100%;
-		 min-height: 150px;
-		 padding: 10px;
-		 box-sizing: border-box;
-		 border: 1px solid #00ffff;
-		 border-radius: 5px;
-		 resize: none;
-}
- .btn-primary {
-		 background-color: #007bff;
-		 border: 1px solid #007bff;
-	   outline: 2px solid #FFFFFF;
-}
- .btn-primary:hover {
-		 background-color: #0056b3;
-		 border: 1px solid #0056b3;
-	   outline: 2px solid #FFFFFF;
-}
- .success-message {
-		 color: green;
-		 margin-top: 10px;
-}
- .footer {
-		 background-color: #E90207 46%,  #ff8c00 100%;
-		 padding: 10px;
-		 text-align: center;
-		 font-size: 16px;
-		 color: #FFFFFF;
-		 margin-top: 50px;
-		 border-top: 1px solid #blue;
-		 position: fixed;
-		 bottom: 0;
-		 left: 0;
-		 width: 100%;
-}
- .footer p {
-		 margin: 0;
-		 display: inline-block;
-		 margin-right: 30px;
-}
- .container-buttons {
-		 margin-top: 20px;
-		 text-align: center;
-}
- .container-buttons .btn {
-		 margin: 5px;
+    padding: 20px;
+    background-color: #121212;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
- #result {
-		 padding: 10px;
-		 margin-top: 20px;
-		 border-radius: 5px;
+.container {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
- .center-placeholder::placeholder {
-		 text-align: center;
+
+h1 {
+    color: #fff;
+    font-size: 24px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    color: #ddd;
+}
+
+.navbar {
+    background: linear-gradient(90deg, blue, #333);
+    border-radius: 10px;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.centered-textarea {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 150px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #444;
+    border-radius: 10px;
+    resize: none;
+    color: #fff;
+    background-color: #333;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.centered-textarea:focus {
+    border-color: #007bff;
+    background-color: #222;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #ff5e62, #ff9966);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #ff9966, #ff5e62);
+    transform: scale(1.05);
+}
+
+.success-message {
+    color: #28a745;
+    margin-top: 10px;
+}
+
+.footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #ff5e62;
+    margin-top: 50px;
+    border-top: 1px solid #ff5e62;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.container-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container-buttons .btn {
+    margin: 5px;
+}
+
+#result {
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: #fff;
+    background: #333;
+    border: 1px solid #444;
+}
+
+.center-placeholder::placeholder {
+    text-align: center;
+    color: #ccc;
 }
 
 .form-check {
-	display: flex;
-	margin-top: 10px;
-	padding: 14px;
-	align-items: center;
-	border: 1px solid #red;
-	border-radius: 8px;
-	cursor: pointer;
-	transition: background-color 0.3s ease, border-color 0.3s ease; 
-	border-color: #ccc;
-	background-color: #fff;
+    display: flex;
+    margin-top: 10px;
+    padding: 15px;
+    align-items: center;
+    border: 1px solid #444;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease; 
+    background-color: #222;
 }
 
 .form-check:hover {
-	background-color: #f5f5; 
-	border-color: #f8f8f8; 
+    background-color: #333; 
+    border-color: #888; 
 }
 
 .form-check-input {
-	margin-right: 10px; 
-	opacity: 0;
+    margin-right: 10px; 
+    opacity: 0;
 }
 
 .disable {
-	display: none;
+    display: none;
 }
 
-#inputOfPrefix, #inputOfAdmin,
-#inputOfBotName {
-	padding: 13px;
-	width: 200px;
-	border: 1px solid #ccc;
-	border-radius: 8px;
-	cursor: pointer;
-	transition: background-color 0.3s ease, border-color 0.3s ease; 
-	border-color: #ccc;
-	background-color: #fff;
+#inputOfPrefix, #inputOfAdmin {
+    padding: 15px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s ease, border-color 0.3s ease; 
 }
+
+#inputOfPrefix:focus, #inputOfAdmin:focus {
+    border-color: #007bff;
+    background-color: #222;
+}
+
+#json-data {
+    background-image: url('https://i.imgur.com/AnFWx6c.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 #listOfCommands, #listOfCommandsEvent, #prefixOfCommands, #adminOfCommands {
-	border: none !important;
+    border: none !important;
 }
 
-#listOfCommands:not(.modal), #listOfCommandsEvent:not(.modal), #prefixOfCommands:not(.modal),
-#adminOfCommands:not(.modal) {
-	box-shadow: none !important;
+#listOfCommands:not(.modal), #listOfCommandsEvent:not(.modal), #prefixOfCommands:not(.modal), #adminOfCommands:not(.modal) {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-div {
-	margin-bottom: 10px;
-	border-radius: 5px;
+.container h1 {
+    position: relative;
+    display: inline-block;
+    padding: 15px 25px;
+    margin-bottom: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-video {
-	max-width: 100%;
-	max-height: 70%;
-	margin-bottom: 20px;
-	cursor: default;
-	outline: 2px solid #FFFFFF;
-	background: linear-gradient(135deg, aqua, rgb(0, 255, 0), rgb(255, 255, 0), orange, red, rgb(255, 0, 234));
-	border-radius: 10px;
-	animation: animate 1.5s linear infinite;
-	 border: 2px solid transparent;
-animation: neon-border 2s linear infinite alternate; /* Adjust animation duration and timing */
-	}
-
- @keyframes neon-border {
-	 from {
-		border-color: #ff0000; /* Start color */
-	box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000; /* Adjust shadow colors and sizes */
-}
-to {
-	border-color: #00ff00; /* End color */
-	box-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00, 0 0 60px #00ff00; /* Adjust shadow colors and sizes */
-}
- }
-
-#video-container {
-	width: 100%;
-	height: 70%;
-	margin-bottom: 20px;
+.container p {
+    line-height: 1.8;
 }
 
-#video {
-	 width: 100%;
-	 border-radius: 10px;
-	 height: 70%%;
-	 object-fit: cover;
-	 margin: auto;
+.container ul {
+    padding-left: 20px;
+}
+
+.container ul li {
+    list-style: none;
+}
+
+.container ul li::before {
+    content: '\2022';
+    color: #007bff;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.container ul li + li {
+    margin-top: 15px;
+}
+
+#listOfCommands button,
+#listOfCommandsEvent button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+    background: linear-gradient(90deg, #007bff, #00c6ff);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#listOfCommands button:hover,
+#listOfCommandsEvent button:hover {
+    background: linear-gradient(90deg, #00c6ff, #007bff);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .container h1 {
+        font-size: 20px;
+    }
+
+    video {
+        width: 100%;
+        border: 5px solid #ff9966;
+    }
+
+    #listOfCommands button,
+    #listOfCommandsEvent button {
+        padding: 10px;
+    }
+
+    @media (max-width: 768px) {
+    .container h1 {
+        font-size: 18px;
+    }
+    video {
+    width: 100%;
+    border: 5px solid violet;
+    }
+    
 }
